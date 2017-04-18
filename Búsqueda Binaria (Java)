@@ -1,0 +1,35 @@
+
+public class Main {
+    
+public static void main(String[] args) {
+        
+}
+public static int BusquedaBinaria(int inf, int sup, int x){
+        
+        int mitad, descuento;
+        
+        int [] A = {1, 2, 4, 8, 9, 12, 14, 18, 22, 28, 32, 36, 40, 45, 49, 55, 59, 69, 78, 87, 99};
+        
+        mitad = (sup + inf)/2;
+        descuento = (sup - inf)/2;
+        
+        if (A[mitad]==x){
+            
+            return mitad;
+            
+        }else{
+            
+            if (A[mitad]<x){
+                
+                return BusquedaBinaria(inf, mitad, x);
+                
+            }else{
+                
+                return BusquedaBinaria(mitad, sup, x);
+                
+            }
+            
+        }
+        
+    }
+}
