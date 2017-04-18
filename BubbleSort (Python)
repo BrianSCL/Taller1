@@ -1,0 +1,28 @@
+def bubbleSort(unordered):
+  ordered = unordered
+  n = len(unordered)
+  
+  for i in range (n - 1):
+    swap = False
+    
+    for j in range (n - 1):
+      
+      if ordered[j] > ordered[j + 1]:
+        
+        auxSwap = ordered[j]
+        ordered[j] = ordered[j + 1]
+        ordered[j + 1] = auxSwap
+        
+        swap = True
+        
+    if not swap:
+      
+      break
+    
+  return ordered
+  
+array = {1, 4, 6, 2, 3, 7, 5}
+print (array)
+
+array2 = bubbleSort(array)
+print (array2)
