@@ -1,2 +1,2 @@
 # Talleres
-Este repositorio contiene el taller no 1 del curso Fundamentos de Estructura de Datos
+Este repositorio contiene los talleres (1,2,3) del curso Fundamentos de Estructura de Datos
