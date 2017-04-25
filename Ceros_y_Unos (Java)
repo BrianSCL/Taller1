@@ -13,7 +13,7 @@ public class Main {
         int counter1 = 0;
         for (i = t; i >=2; i=i-2){
             
-            for(j =0; j<(A.length-t+1);j++){
+            for(j =0; j<(A.length-i+1);j++){
                 
                 for (j = 0; j <= j+t; j++){
                     
