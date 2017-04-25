@@ -8,22 +8,22 @@ public class Main {
         int A[] = {1, 0, 0, 0, 0, 1};
         int t = A.length/2;
         t = t *2;
-        int i;
+        int i, j;
         int counter = 0;
         int counter1 = 0;
-        for (i = t; t>=2; t=t-2){
+        for (i = t; i >=2; i=i-2){
             
-            for(i =0; i<(A.length-t+1);i++){
+            for(j =0; j<(A.length-t+1);j++){
                 
-                for (i = 0; i <= i+t; i++){
+                for (j = 0; j <= j+t; j++){
                     
                     if(A[counter]==0){
                         
-                        System.out.println(A[i]);
+                        System.out.println(A[j]);
                         
                         if(A[counter1]==1){
                         
-                        System.out.println(A[i]);
+                        System.out.println(A[j]);
                         
                         if(counter == counter1){
                             
