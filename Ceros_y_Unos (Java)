@@ -1,0 +1,47 @@
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        int A[] = {1, 0, 0, 0, 0, 1};
+        int t = A.length/2;
+        t = t *2;
+        int i;
+        int counter = 0;
+        int counter1 = 0;
+        for (i = t; t>=2; t=t-2){
+            
+            for(i =0; i<(A.length-t+1);i++){
+                
+                for (i = 0; i <= i+t; i++){
+                    
+                    if(A[counter]==0){
+                        
+                        System.out.println(A[i]);
+                        
+                        if(A[counter1]==1){
+                        
+                        System.out.println(A[i]);
+                        
+                        if(counter == counter1){
+                            
+                            return t;
+                            
+                        }
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+        
+    }
+        
+}
+return i;    
+}
